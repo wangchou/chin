@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE90B16B234DB4C5005E60EA /* scam-sites.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE90B166234DB4C5005E60EA /* scam-sites.txt */; };
-		BE90B16C234DB4C5005E60EA /* sns-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE90B167234DB4C5005E60EA /* sns-content-farms.txt */; };
-		BE90B16D234DB4C5005E60EA /* fake-news.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE90B168234DB4C5005E60EA /* fake-news.txt */; };
-		BE90B16E234DB4C5005E60EA /* content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE90B169234DB4C5005E60EA /* content-farms.txt */; };
-		BE90B16F234DB4C5005E60EA /* nearly-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE90B16A234DB4C5005E60EA /* nearly-content-farms.txt */; };
 		BEDD80F3234DABB400CFFFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F2234DABB400CFFFDF /* AppDelegate.swift */; };
 		BEDD80F5234DABB400CFFFDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F4234DABB400CFFFDF /* SceneDelegate.swift */; };
 		BEDD80F7234DABB400CFFFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F6234DABB400CFFFDF /* ContentView.swift */; };
@@ -48,11 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE90B166234DB4C5005E60EA /* scam-sites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "scam-sites.txt"; path = "content-farm-terminator/files/blocklist/scam-sites.txt"; sourceTree = SOURCE_ROOT; };
-		BE90B167234DB4C5005E60EA /* sns-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sns-content-farms.txt"; path = "content-farm-terminator/files/blocklist/sns-content-farms.txt"; sourceTree = SOURCE_ROOT; };
-		BE90B168234DB4C5005E60EA /* fake-news.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fake-news.txt"; path = "content-farm-terminator/files/blocklist/fake-news.txt"; sourceTree = SOURCE_ROOT; };
-		BE90B169234DB4C5005E60EA /* content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "content-farms.txt"; path = "content-farm-terminator/files/blocklist/content-farms.txt"; sourceTree = SOURCE_ROOT; };
-		BE90B16A234DB4C5005E60EA /* nearly-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "nearly-content-farms.txt"; path = "content-farm-terminator/files/blocklist/nearly-content-farms.txt"; sourceTree = SOURCE_ROOT; };
+		BEB47DD2234EC8A700BFB7FA /* 清.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "清.entitlements"; sourceTree = "<group>"; };
+		BEB47DD3234ECE7900BFB7FA /* blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blocker.entitlements; sourceTree = "<group>"; };
 		BEDD80EF234DABB400CFFFDF /* 清.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "清.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD80F2234DABB400CFFFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDD80F4234DABB400CFFFDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +80,7 @@
 		BEDD80E6234DABB400CFFFDF = {
 			isa = PBXGroup;
 			children = (
+				BEB47DD2234EC8A700BFB7FA /* 清.entitlements */,
 				BEDD80F1234DABB400CFFFDF /* app */,
 				BEDD810B234DAD7C00CFFFDF /* blocker */,
 				BEDD80F0234DABB400CFFFDF /* Products */,
@@ -128,11 +121,7 @@
 		BEDD810B234DAD7C00CFFFDF /* blocker */ = {
 			isa = PBXGroup;
 			children = (
-				BE90B169234DB4C5005E60EA /* content-farms.txt */,
-				BE90B168234DB4C5005E60EA /* fake-news.txt */,
-				BE90B16A234DB4C5005E60EA /* nearly-content-farms.txt */,
-				BE90B166234DB4C5005E60EA /* scam-sites.txt */,
-				BE90B167234DB4C5005E60EA /* sns-content-farms.txt */,
+				BEB47DD3234ECE7900BFB7FA /* blocker.entitlements */,
 				BEDD810C234DAD7C00CFFFDF /* blockerList.json */,
 				BEDD810E234DAD7C00CFFFDF /* ContentBlockerRequestHandler.swift */,
 				BEDD8110234DAD7C00CFFFDF /* Info.plist */,
@@ -231,12 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE90B16D234DB4C5005E60EA /* fake-news.txt in Resources */,
 				BEDD810D234DAD7C00CFFFDF /* blockerList.json in Resources */,
-				BE90B16B234DB4C5005E60EA /* scam-sites.txt in Resources */,
-				BE90B16F234DB4C5005E60EA /* nearly-content-farms.txt in Resources */,
-				BE90B16E234DB4C5005E60EA /* content-farms.txt in Resources */,
-				BE90B16C234DB4C5005E60EA /* sns-content-farms.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +386,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "清.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"chin/Preview Content\"";
 				DEVELOPMENT_TEAM = ETE87474CU;
@@ -411,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.wcl.chin;
 				PRODUCT_NAME = "清";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,6 +408,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "清.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"chin/Preview Content\"";
 				DEVELOPMENT_TEAM = ETE87474CU;
@@ -432,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.wcl.chin;
 				PRODUCT_NAME = "清";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = blocker/blocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETE87474CU;
 				INFOPLIST_FILE = blocker/Info.plist;
@@ -451,7 +438,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.blocker;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.wcl.chinBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -463,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = blocker/blocker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETE87474CU;
 				INFOPLIST_FILE = blocker/Info.plist;
@@ -471,7 +459,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.blocker;
+				PRODUCT_BUNDLE_IDENTIFIER = idv.wcl.chinBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

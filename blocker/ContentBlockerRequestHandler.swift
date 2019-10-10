@@ -9,6 +9,8 @@
 import UIKit
 import MobileCoreServices
 
+typealias BlockerList = [[String: [String: String]]]
+
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
 
     func beginRequest(with context: NSExtensionContext) {
@@ -19,5 +21,16 @@ class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
         
         context.completeRequest(returningItems: [item], completionHandler: nil)
     }
-    
+
+    private static func generateBlacklistJSON() -> BlockerList {
+      var blacklist: BlockerList = []
+      for tracker in trackerList {
+        blacklist.append([
+          "action": ["type": "block"],
+          "trigger": ["url-filter": String(format: "https?://(www.)?%@.*", tracker)]
+        ])
+      }
+
+      return blacklist
+    }
 }
