@@ -6,31 +6,24 @@
 //  Copyright © Reiwa 1 com.wcl. All rights reserved.
 //
 
-import UIKit
 import MobileCoreServices
-
-typealias BlockerList = [[String: [String: String]]]
+import UIKit
 
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
-
     func beginRequest(with context: NSExtensionContext) {
-        let attachment = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList", withExtension: "json"))!
-        
+        let documentFolder = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.idv.wcl.chin")
+
+        guard let jsonURL = documentFolder?.appendingPathComponent("blacklist.json") else {
+            print("Content Block Extension: cannnot load blacklist.json")
+            return
+        }
+
+        let attachment = NSItemProvider(contentsOf: jsonURL)!
+
         let item = NSExtensionItem()
+
         item.attachments = [attachment]
-        
+
         context.completeRequest(returningItems: [item], completionHandler: nil)
-    }
-
-    private static func generateBlacklistJSON() -> BlockerList {
-      var blacklist: BlockerList = []
-      for tracker in trackerList {
-        blacklist.append([
-          "action": ["type": "block"],
-          "trigger": ["url-filter": String(format: "https?://(www.)?%@.*", tracker)]
-        ])
-      }
-
-      return blacklist
     }
 }

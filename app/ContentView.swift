@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Text("請到「設定 > Safari > 內容阻擋器」啟用阻擋功能。網站的列表來自「內容農場終結者」。")
     }
 }
 
