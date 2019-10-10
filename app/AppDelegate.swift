@@ -23,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                              "scam-sites",
                              "sns-content-farms"]
 
+//            blacklist.append([
+//                "action": ["type": "block"],
+//                "trigger": ["url-filter": "https?://www.ptt.cc/bbs/Gossiping"],
+//            ])
+
             for fileName in fileNames {
                 guard let path = Bundle.main.path(forResource: fileName, ofType: "txt") else {
                     print("\(fileName) is not Found")

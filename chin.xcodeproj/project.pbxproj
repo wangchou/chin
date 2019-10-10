@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEB47DEA234ED39F00BFB7FA /* content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DE5234ED39F00BFB7FA /* content-farms.txt */; };
-		BEB47DEB234ED39F00BFB7FA /* sns-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DE6234ED39F00BFB7FA /* sns-content-farms.txt */; };
-		BEB47DEC234ED39F00BFB7FA /* nearly-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DE7234ED39F00BFB7FA /* nearly-content-farms.txt */; };
-		BEB47DED234ED39F00BFB7FA /* fake-news.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DE8234ED39F00BFB7FA /* fake-news.txt */; };
-		BEB47DEE234ED39F00BFB7FA /* scam-sites.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DE9234ED39F00BFB7FA /* scam-sites.txt */; };
+		BEB47DF8234F0FFC00BFB7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB47DF7234F0FFC00BFB7FA /* AppDelegate.swift */; };
+		BEB47DFA234F0FFC00BFB7FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB47DF9234F0FFC00BFB7FA /* ContentView.swift */; };
+		BEB47DFC234F0FFC00BFB7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DFB234F0FFC00BFB7FA /* Assets.xcassets */; };
+		BEB47DFF234F0FFD00BFB7FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB47DFE234F0FFD00BFB7FA /* Preview Assets.xcassets */; };
+		BEB47E02234F0FFD00BFB7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E00234F0FFD00BFB7FA /* Main.storyboard */; };
+		BEB47E0F234F104500BFB7FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB47E0E234F104500BFB7FA /* Cocoa.framework */; };
+		BEB47E12234F104500BFB7FA /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E11234F104500BFB7FA /* blockerList.json */; };
+		BEB47E14234F104500BFB7FA /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB47E13234F104500BFB7FA /* ContentBlockerRequestHandler.swift */; };
+		BEB47E19234F104600BFB7FA /* macBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEB47E0C234F104500BFB7FA /* macBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEB47E24234F3D7700BFB7FA /* nearly-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E1F234F3D7700BFB7FA /* nearly-content-farms.txt */; };
+		BEB47E25234F3D7700BFB7FA /* scam-sites.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E20234F3D7700BFB7FA /* scam-sites.txt */; };
+		BEB47E26234F3D7700BFB7FA /* fake-news.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E21234F3D7700BFB7FA /* fake-news.txt */; };
+		BEB47E27234F3D7700BFB7FA /* content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E22234F3D7700BFB7FA /* content-farms.txt */; };
+		BEB47E28234F3D7700BFB7FA /* sns-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E23234F3D7700BFB7FA /* sns-content-farms.txt */; };
+		BEB47E2E234F3D9300BFB7FA /* nearly-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E29234F3D9300BFB7FA /* nearly-content-farms.txt */; };
+		BEB47E2F234F3D9300BFB7FA /* sns-content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E2A234F3D9300BFB7FA /* sns-content-farms.txt */; };
+		BEB47E30234F3D9300BFB7FA /* scam-sites.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E2B234F3D9300BFB7FA /* scam-sites.txt */; };
+		BEB47E31234F3D9300BFB7FA /* content-farms.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E2C234F3D9300BFB7FA /* content-farms.txt */; };
+		BEB47E32234F3D9300BFB7FA /* fake-news.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEB47E2D234F3D9300BFB7FA /* fake-news.txt */; };
 		BEDD80F3234DABB400CFFFDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F2234DABB400CFFFDF /* AppDelegate.swift */; };
 		BEDD80F5234DABB400CFFFDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F4234DABB400CFFFDF /* SceneDelegate.swift */; };
 		BEDD80F7234DABB400CFFFDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDD80F6234DABB400CFFFDF /* ContentView.swift */; };
@@ -23,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BEB47E17234F104600BFB7FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDD80E7234DABB400CFFFDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB47E0B234F104500BFB7FA;
+			remoteInfo = macBlocker;
+		};
 		BEDD8111234DAD7C00CFFFDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEDD80E7234DABB400CFFFDF /* Project object */;
@@ -33,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BEB47E1D234F104600BFB7FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEB47E19234F104600BFB7FA /* macBlocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDD8117234DAD7C00CFFFDF /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,12 +80,31 @@
 
 /* Begin PBXFileReference section */
 		BEB47DD3234ECE7900BFB7FA /* blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blocker.entitlements; sourceTree = "<group>"; };
-		BEB47DE5234ED39F00BFB7FA /* content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "content-farms.txt"; path = "content-farm-terminator/files/blocklist/content-farms.txt"; sourceTree = "<group>"; };
-		BEB47DE6234ED39F00BFB7FA /* sns-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sns-content-farms.txt"; path = "content-farm-terminator/files/blocklist/sns-content-farms.txt"; sourceTree = "<group>"; };
-		BEB47DE7234ED39F00BFB7FA /* nearly-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "nearly-content-farms.txt"; path = "content-farm-terminator/files/blocklist/nearly-content-farms.txt"; sourceTree = "<group>"; };
-		BEB47DE8234ED39F00BFB7FA /* fake-news.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fake-news.txt"; path = "content-farm-terminator/files/blocklist/fake-news.txt"; sourceTree = "<group>"; };
-		BEB47DE9234ED39F00BFB7FA /* scam-sites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "scam-sites.txt"; path = "content-farm-terminator/files/blocklist/scam-sites.txt"; sourceTree = "<group>"; };
 		BEB47DF0234EE76700BFB7FA /* 清.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "清.entitlements"; sourceTree = SOURCE_ROOT; };
+		BEB47DF5234F0FFC00BFB7FA /* macApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB47DF7234F0FFC00BFB7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEB47DF9234F0FFC00BFB7FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEB47DFB234F0FFC00BFB7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEB47DFE234F0FFD00BFB7FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEB47E01234F0FFD00BFB7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEB47E03234F0FFD00BFB7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB47E04234F0FFD00BFB7FA /* macApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macApp.entitlements; sourceTree = "<group>"; };
+		BEB47E0C234F104500BFB7FA /* macBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = macBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB47E0E234F104500BFB7FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		BEB47E11234F104500BFB7FA /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		BEB47E13234F104500BFB7FA /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		BEB47E15234F104600BFB7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB47E16234F104600BFB7FA /* macBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macBlocker.entitlements; sourceTree = "<group>"; };
+		BEB47E1F234F3D7700BFB7FA /* nearly-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nearly-content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E20234F3D7700BFB7FA /* scam-sites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scam-sites.txt"; sourceTree = "<group>"; };
+		BEB47E21234F3D7700BFB7FA /* fake-news.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fake-news.txt"; sourceTree = "<group>"; };
+		BEB47E22234F3D7700BFB7FA /* content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E23234F3D7700BFB7FA /* sns-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sns-content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E29234F3D9300BFB7FA /* nearly-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "nearly-content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E2A234F3D9300BFB7FA /* sns-content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sns-content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E2B234F3D9300BFB7FA /* scam-sites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scam-sites.txt"; sourceTree = "<group>"; };
+		BEB47E2C234F3D9300BFB7FA /* content-farms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "content-farms.txt"; sourceTree = "<group>"; };
+		BEB47E2D234F3D9300BFB7FA /* fake-news.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fake-news.txt"; sourceTree = "<group>"; };
 		BEDD80EF234DABB400CFFFDF /* 清清清.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "清清清.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDD80F2234DABB400CFFFDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDD80F4234DABB400CFFFDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +119,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEB47DF2234F0FFC00BFB7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB47E09234F104500BFB7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB47E0F234F104500BFB7FA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDD80EC234DABB400CFFFDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,11 +154,65 @@
 		BEB47DE4234ED38300BFB7FA /* defaultBlockList */ = {
 			isa = PBXGroup;
 			children = (
-				BEB47DE5234ED39F00BFB7FA /* content-farms.txt */,
-				BEB47DE8234ED39F00BFB7FA /* fake-news.txt */,
-				BEB47DE7234ED39F00BFB7FA /* nearly-content-farms.txt */,
-				BEB47DE9234ED39F00BFB7FA /* scam-sites.txt */,
-				BEB47DE6234ED39F00BFB7FA /* sns-content-farms.txt */,
+				BEB47E22234F3D7700BFB7FA /* content-farms.txt */,
+				BEB47E21234F3D7700BFB7FA /* fake-news.txt */,
+				BEB47E1F234F3D7700BFB7FA /* nearly-content-farms.txt */,
+				BEB47E20234F3D7700BFB7FA /* scam-sites.txt */,
+				BEB47E23234F3D7700BFB7FA /* sns-content-farms.txt */,
+			);
+			name = defaultBlockList;
+			sourceTree = "<group>";
+		};
+		BEB47DF6234F0FFC00BFB7FA /* macApp */ = {
+			isa = PBXGroup;
+			children = (
+				BEB47E1E234F10B400BFB7FA /* defaultBlockList */,
+				BEB47DF7234F0FFC00BFB7FA /* AppDelegate.swift */,
+				BEB47DF9234F0FFC00BFB7FA /* ContentView.swift */,
+				BEB47DFB234F0FFC00BFB7FA /* Assets.xcassets */,
+				BEB47E00234F0FFD00BFB7FA /* Main.storyboard */,
+				BEB47E03234F0FFD00BFB7FA /* Info.plist */,
+				BEB47E04234F0FFD00BFB7FA /* macApp.entitlements */,
+				BEB47DFD234F0FFD00BFB7FA /* Preview Content */,
+			);
+			path = macApp;
+			sourceTree = "<group>";
+		};
+		BEB47DFD234F0FFD00BFB7FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BEB47DFE234F0FFD00BFB7FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEB47E0D234F104500BFB7FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB47E0E234F104500BFB7FA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEB47E10234F104500BFB7FA /* macBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				BEB47E11234F104500BFB7FA /* blockerList.json */,
+				BEB47E13234F104500BFB7FA /* ContentBlockerRequestHandler.swift */,
+				BEB47E15234F104600BFB7FA /* Info.plist */,
+				BEB47E16234F104600BFB7FA /* macBlocker.entitlements */,
+			);
+			path = macBlocker;
+			sourceTree = "<group>";
+		};
+		BEB47E1E234F10B400BFB7FA /* defaultBlockList */ = {
+			isa = PBXGroup;
+			children = (
+				BEB47E2C234F3D9300BFB7FA /* content-farms.txt */,
+				BEB47E2D234F3D9300BFB7FA /* fake-news.txt */,
+				BEB47E29234F3D9300BFB7FA /* nearly-content-farms.txt */,
+				BEB47E2B234F3D9300BFB7FA /* scam-sites.txt */,
+				BEB47E2A234F3D9300BFB7FA /* sns-content-farms.txt */,
 			);
 			name = defaultBlockList;
 			sourceTree = "<group>";
@@ -102,6 +222,9 @@
 			children = (
 				BEDD80F1234DABB400CFFFDF /* app */,
 				BEDD810B234DAD7C00CFFFDF /* blocker */,
+				BEB47DF6234F0FFC00BFB7FA /* macApp */,
+				BEB47E10234F104500BFB7FA /* macBlocker */,
+				BEB47E0D234F104500BFB7FA /* Frameworks */,
 				BEDD80F0234DABB400CFFFDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +234,8 @@
 			children = (
 				BEDD80EF234DABB400CFFFDF /* 清清清.app */,
 				BEDD810A234DAD7C00CFFFDF /* blocker.appex */,
+				BEB47DF5234F0FFC00BFB7FA /* macApp.app */,
+				BEB47E0C234F104500BFB7FA /* macBlocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +277,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BEB47DF4234F0FFC00BFB7FA /* macApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB47E05234F0FFD00BFB7FA /* Build configuration list for PBXNativeTarget "macApp" */;
+			buildPhases = (
+				BEB47DF1234F0FFC00BFB7FA /* Sources */,
+				BEB47DF2234F0FFC00BFB7FA /* Frameworks */,
+				BEB47DF3234F0FFC00BFB7FA /* Resources */,
+				BEB47E1D234F104600BFB7FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB47E18234F104600BFB7FA /* PBXTargetDependency */,
+			);
+			name = macApp;
+			productName = macApp;
+			productReference = BEB47DF5234F0FFC00BFB7FA /* macApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEB47E0B234F104500BFB7FA /* macBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB47E1A234F104600BFB7FA /* Build configuration list for PBXNativeTarget "macBlocker" */;
+			buildPhases = (
+				BEB47E08234F104500BFB7FA /* Sources */,
+				BEB47E09234F104500BFB7FA /* Frameworks */,
+				BEB47E0A234F104500BFB7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macBlocker;
+			productName = macBlocker;
+			productReference = BEB47E0C234F104500BFB7FA /* macBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BEDD80EE234DABB400CFFFDF /* chin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDD8103234DABB500CFFFDF /* Build configuration list for PBXNativeTarget "chin" */;
@@ -198,6 +359,12 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = com.wcl;
 				TargetAttributes = {
+					BEB47DF4234F0FFC00BFB7FA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					BEB47E0B234F104500BFB7FA = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					BEDD80EE234DABB400CFFFDF = {
 						CreatedOnToolsVersion = 11.1;
 					};
@@ -221,23 +388,48 @@
 			targets = (
 				BEDD80EE234DABB400CFFFDF /* chin */,
 				BEDD8109234DAD7C00CFFFDF /* blocker */,
+				BEB47DF4234F0FFC00BFB7FA /* macApp */,
+				BEB47E0B234F104500BFB7FA /* macBlocker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEB47DF3234F0FFC00BFB7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB47E31234F3D9300BFB7FA /* content-farms.txt in Resources */,
+				BEB47E02234F0FFD00BFB7FA /* Main.storyboard in Resources */,
+				BEB47E30234F3D9300BFB7FA /* scam-sites.txt in Resources */,
+				BEB47DFF234F0FFD00BFB7FA /* Preview Assets.xcassets in Resources */,
+				BEB47E32234F3D9300BFB7FA /* fake-news.txt in Resources */,
+				BEB47DFC234F0FFC00BFB7FA /* Assets.xcassets in Resources */,
+				BEB47E2F234F3D9300BFB7FA /* sns-content-farms.txt in Resources */,
+				BEB47E2E234F3D9300BFB7FA /* nearly-content-farms.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB47E0A234F104500BFB7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB47E12234F104500BFB7FA /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDD80ED234DABB400CFFFDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB47DEA234ED39F00BFB7FA /* content-farms.txt in Resources */,
+				BEB47E27234F3D7700BFB7FA /* content-farms.txt in Resources */,
+				BEB47E26234F3D7700BFB7FA /* fake-news.txt in Resources */,
 				BEDD80FF234DABB500CFFFDF /* LaunchScreen.storyboard in Resources */,
 				BEDD80FC234DABB500CFFFDF /* Preview Assets.xcassets in Resources */,
-				BEB47DEC234ED39F00BFB7FA /* nearly-content-farms.txt in Resources */,
-				BEB47DEB234ED39F00BFB7FA /* sns-content-farms.txt in Resources */,
-				BEB47DEE234ED39F00BFB7FA /* scam-sites.txt in Resources */,
-				BEB47DED234ED39F00BFB7FA /* fake-news.txt in Resources */,
 				BEDD80F9234DABB500CFFFDF /* Assets.xcassets in Resources */,
+				BEB47E28234F3D7700BFB7FA /* sns-content-farms.txt in Resources */,
+				BEB47E24234F3D7700BFB7FA /* nearly-content-farms.txt in Resources */,
+				BEB47E25234F3D7700BFB7FA /* scam-sites.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +443,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BEB47DF1234F0FFC00BFB7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB47DFA234F0FFC00BFB7FA /* ContentView.swift in Sources */,
+				BEB47DF8234F0FFC00BFB7FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB47E08234F104500BFB7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB47E14234F104500BFB7FA /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEDD80EB234DABB400CFFFDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +481,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BEB47E18234F104600BFB7FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEB47E0B234F104500BFB7FA /* macBlocker */;
+			targetProxy = BEB47E17234F104600BFB7FA /* PBXContainerItemProxy */;
+		};
 		BEDD8112234DAD7C00CFFFDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEDD8109234DAD7C00CFFFDF /* blocker */;
@@ -280,6 +494,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BEB47E00234F0FFD00BFB7FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEB47E01234F0FFD00BFB7FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		BEDD80FD234DABB500CFFFDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,6 +513,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BEB47E06234F0FFD00BFB7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = macApp/macApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"macApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ETE87474CU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.macApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEB47E07234F0FFD00BFB7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = macApp/macApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"macApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ETE87474CU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.macApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BEB47E1B234F104600BFB7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = macBlocker/macBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETE87474CU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = macBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.macApp.macBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEB47E1C234F104600BFB7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = macBlocker/macBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ETE87474CU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = macBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcl.chin.macApp.macBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		BEDD8101234DABB500CFFFDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,6 +810,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BEB47E05234F0FFD00BFB7FA /* Build configuration list for PBXNativeTarget "macApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB47E06234F0FFD00BFB7FA /* Debug */,
+				BEB47E07234F0FFD00BFB7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB47E1A234F104600BFB7FA /* Build configuration list for PBXNativeTarget "macBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB47E1B234F104600BFB7FA /* Debug */,
+				BEB47E1C234F104600BFB7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BEDD80EA234DABB400CFFFDF /* Build configuration list for PBXProject "chin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
